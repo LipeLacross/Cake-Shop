@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,104 +10,112 @@
 </head>
 
 <body>
-  <header>
-    <h1><img src="assets/cake_favicon.ico" alt="Ícone" style="width: 40px; vertical-align: middle;"> Loja da Dona Nilda</h1>
-    <p>Localizada em Salvador, Rua Cristopher 45, Oliveira</p>
-  </header>
-  <main>
-    <section class="products">
-      <h2>Bolos</h2>
-      <div class="product-row">
-        <article class="product">
-          <img src="assets/orange_cake_chocolate_coating.png" alt="Bolo de Laranja com Cobertura de Chocolate">
-          <h3>Bolo de Laranja com Cobertura de Chocolate</h3>
-          <p>R$ 35,00 (Bolo Inteiro)</p>
-          <p>R$ 5,00 (Fatia)</p>
-          <p class="description">Um bolo macio com o sabor refrescante da laranja e uma cobertura rica de chocolate.</p>
-          <div class="button-group">
-            <button onclick="addToCart('Bolo de Laranja com Cobertura de Chocolate (Bolo Inteiro)', 35.00)">Adicionar Bolo Inteiro ao Carrinho</button>
-            <button onclick="addToCart('Fatia de Bolo de Laranja com Cobertura de Chocolate', 5.00)">Adicionar Fatia ao Carrinho</button>
-          </div>
-        </article>
+<header>
+  <h1><img src="assets/cake_favicon.ico" alt="Ícone"> Loja da Dona Nilda</h1>
+  <p>Localizada em Salvador, Rua Cristopher 45, Oliveira</p>
+  <div class="header-hours">
+    <h2>Horário de Funcionamento</h2>
+    <p>Segunda a Sexta: 09:00 - 18:00</p>
+    <p>Sábado: 10:00 - 14:00</p>
+    <p>Domingo: Fechado</p>
+  </div>
+</header>
 
-        <article class="product">
-          <img src="assets/chocolate_cake_with_strawberry.png" alt="Bolo de Chocolate com Morango">
-          <h3>Bolo de Chocolate com Morango</h3>
-          <p>R$ 40,00 (Bolo Inteiro)</p>
-          <p>R$ 6,00 (Fatia)</p>
-          <p class="description">Delicioso bolo de chocolate, coberto com morangos frescos.</p>
-          <div class="button-group">
-            <button onclick="addToCart('Bolo de Chocolate com Morango (Bolo Inteiro)', 40.00)">Adicionar Bolo Inteiro ao Carrinho</button>
-            <button onclick="addToCart('Fatia de Bolo de Chocolate com Morango', 6.00)">Adicionar Fatia ao Carrinho</button>
-          </div>
-        </article>
+<main>
+  <section class="products">
+    <h2>Bolos</h2>
+    <div class="product-row">
+      <article class="product">
+        <img src="assets/orange_cake_chocolate_coating.png" alt="Bolo de Laranja com Cobertura de Chocolate">
+        <h3>Bolo de Laranja com Cobertura de Chocolate</h3>
+        <p>R$ 35,00 (Bolo Inteiro)</p>
+        <p>R$ 5,00 (Fatia)</p>
+        <p class="description">Um bolo macio com o sabor refrescante da laranja e uma cobertura rica de chocolate.</p>
+        <div class="button-group">
+          <button onclick="addToCart('Bolo de Laranja com Cobertura de Chocolate (Bolo Inteiro)', 35.00)">Adicionar Bolo Inteiro ao Carrinho</button>
+          <button onclick="addToCart('Fatia de Bolo de Laranja com Cobertura de Chocolate', 5.00)">Adicionar Fatia ao Carrinho</button>
+        </div>
+      </article>
 
-        <article class="product">
-          <img src="assets/lemon_cake.png" alt="Bolo de Limão">
-          <h3>Bolo de Limão</h3>
-          <p>R$ 30,00 (Bolo Inteiro)</p>
-          <p>R$ 4,00 (Fatia)</p>
-          <p class="description">Bolo leve e refrescante, com um toque cítrico de limão.</p>
-          <div class="button-group">
-            <button onclick="addToCart('Bolo de Limão (Bolo Inteiro)', 30.00)">Adicionar Bolo Inteiro ao Carrinho</button>
-            <button onclick="addToCart('Fatia de Bolo de Limão', 4.00)">Adicionar Fatia ao Carrinho</button>
-          </div>
-        </article>
+      <article class="product">
+        <img src="assets/chocolate_cake_with_strawberry.png" alt="Bolo de Chocolate com Morango">
+        <h3>Bolo de Chocolate com Morango</h3>
+        <p>R$ 40,00 (Bolo Inteiro)</p>
+        <p>R$ 6,00 (Fatia)</p>
+        <p class="description">Delicioso bolo de chocolate, coberto com morangos frescos.</p>
+        <div class="button-group">
+          <button onclick="addToCart('Bolo de Chocolate com Morango (Bolo Inteiro)', 40.00)">Adicionar Bolo Inteiro ao Carrinho</button>
+          <button onclick="addToCart('Fatia de Bolo de Chocolate com Morango', 6.00)">Adicionar Fatia ao Carrinho</button>
+        </div>
+      </article>
 
-        <article class="product">
-          <img src="assets/chocolate_pie.png" alt="Torta de Chocolate">
-          <h3>Torta de Chocolate</h3>
-          <p>R$ 45,00 (Torta Inteira)</p>
-          <p>R$ 7,00 (Fatia)</p>
-          <p class="description">Torta cremosa de chocolate, perfeita para os amantes de doces.</p>
-          <div class="button-group">
-            <button onclick="addToCart('Torta de Chocolate (Torta Inteira)', 45.00)">Adicionar Torta Inteira ao Carrinho</button>
-            <button onclick="addToCart('Fatia de Torta de Chocolate', 7.00)">Adicionar Fatia ao Carrinho</button>
-          </div>
-        </article>
-      </div>
-    </section>
+      <article class="product">
+        <img src="assets/lemon_cake.png" alt="Bolo de Limão">
+        <h3>Bolo de Limão</h3>
+        <p>R$ 30,00 (Bolo Inteiro)</p>
+        <p>R$ 4,00 (Fatia)</p>
+        <p class="description">Bolo leve e refrescante, com um toque cítrico de limão.</p>
+        <div class="button-group">
+          <button onclick="addToCart('Bolo de Limão (Bolo Inteiro)', 30.00)">Adicionar Bolo Inteiro ao Carrinho</button>
+          <button onclick="addToCart('Fatia de Bolo de Limão', 4.00)">Adicionar Fatia ao Carrinho</button>
+        </div>
+      </article>
 
-    <section class="products">
-      <h2>Sucos</h2>
-      <div class="product-row">
-        <article class="product">
-          <img src="assets/orange_juice.png" alt="Suco de Laranja">
-          <h3>Suco de Laranja</h3>
-          <p>R$ 10,00 (400ml)</p>
-          <p class="description">Suco de laranja fresco, cheio de vitaminas e sabor.</p>
-          <button onclick="addToCart('Suco de Laranja (400ml)', 10.00)">Adicionar ao Carrinho</button>
-        </article>
+      <article class="product">
+        <img src="assets/chocolate_pie.png" alt="Torta de Chocolate">
+        <h3>Torta de Chocolate</h3>
+        <p>R$ 45,00 (Torta Inteira)</p>
+        <p>R$ 7,00 (Fatia)</p>
+        <p class="description">Torta cremosa de chocolate, perfeita para os amantes de doces.</p>
+        <div class="button-group">
+          <button onclick="addToCart('Torta de Chocolate (Torta Inteira)', 45.00)">Adicionar Torta Inteira ao Carrinho</button>
+          <button onclick="addToCart('Fatia de Torta de Chocolate', 7.00)">Adicionar Fatia ao Carrinho</button>
+        </div>
+      </article>
+    </div>
+  </section>
 
-        <article class="product">
-          <img src="assets/watermelon_juice.png" alt="Suco de Melancia">
-          <h3>Suco de Melancia</h3>
-          <p>R$ 12,00 (400ml)</p>
-          <p class="description">Suco refrescante de melancia, perfeito para dias quentes.</p>
-          <button onclick="addToCart('Suco de Melancia (400ml)', 12.00)">Adicionar ao Carrinho</button>
-        </article>
+  <section class="products">
+    <h2>Sucos</h2>
+    <div class="product-row">
+      <article class="product">
+        <img src="assets/orange_juice.png" alt="Suco de Laranja">
+        <h3>Suco de Laranja</h3>
+        <p>R$ 10,00 (400ml)</p>
+        <p class="description">Suco de laranja fresco, cheio de vitaminas e sabor.</p>
+        <button onclick="addToCart('Suco de Laranja (400ml)', 10.00)">Adicionar ao Carrinho</button>
+      </article>
 
-        <article class="product">
-          <img src="assets/pineapple_juice.png" alt="Suco de Abacaxi">
-          <h3>Suco de Abacaxi</h3>
-          <p>R$ 12,00 (400ml)</p>
-          <p class="description">Suco de abacaxi, doce e revigorante.</p>
-          <button onclick="addToCart('Suco de Abacaxi (400ml)', 12.00)">Adicionar ao Carrinho</button>
-        </article>
-      </div>
-    </section>
+      <article class="product">
+        <img src="assets/watermelon_juice.png" alt="Suco de Melancia">
+        <h3>Suco de Melancia</h3>
+        <p>R$ 12,00 (400ml)</p>
+        <p class="description">Suco refrescante de melancia, perfeito para dias quentes.</p>
+        <button onclick="addToCart('Suco de Melancia (400ml)', 12.00)">Adicionar ao Carrinho</button>
+      </article>
 
-    <section class="cart">
-      <h2>Carrinho de Compras</h2>
-      <ul id="cart-items"></ul>
-      <p id="total">Total: R$ 0,00</p>
-    </section>
-  </main>
+      <article class="product">
+        <img src="assets/pineapple_juice.png" alt="Suco de Abacaxi">
+        <h3>Suco de Abacaxi</h3>
+        <p>R$ 12,00 (400ml)</p>
+        <p class="description">Suco de abacaxi, doce e revigorante.</p>
+        <button onclick="addToCart('Suco de Abacaxi (400ml)', 12.00)">Adicionar ao Carrinho</button>
+      </article>
+    </div>
+  </section>
 
-  <footer>
-    <p>Direitos reservados Felipe Moreira</p>
-  </footer>
+  <section class="cart">
+    <h2>Carrinho de Compras</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: R$ 0,00</p>
+  </section>
+</main>
 
-  <script src="main.js"></script>
-  </body>
+<footer>
+  <p>Direitos reservados Felipe Moreira</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+
 </html>
