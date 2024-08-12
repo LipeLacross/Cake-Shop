@@ -107,10 +107,9 @@ main {
 
 .product img {
   width: 100%;
-  height: auto; /* Mantém a proporção da imagem */
+  height: 250px; /* Mantém a proporção da imagem */
   object-fit: contain; /* Ajusta a imagem para se ajustar ao contêiner sem cortar */
   border-radius: 8px; /* Bordas arredondadas na imagem */
-  margin-bottom: 15px;
 }
 
 .product h3 {
@@ -226,7 +225,7 @@ main {
   color: #fff; /* Cor do texto */
   border-radius: 12px; /* Bordas arredondadas */
   padding: 15px; /* Espaçamento interno */
-  margin: 20px auto 20px; /* Espaçamento superior e inferior, e centraliza o elemento */
+  margin: 20px auto; /* Espaçamento superior e inferior, e centraliza o elemento */
   text-align: center; /* Alinhamento do texto */
 }
 
@@ -240,8 +239,6 @@ main {
   margin: 5px 0;
 }
 
-
-
 footer {
   background-color: var(--footer-bg-color);
   text-align: center;
@@ -249,4 +246,62 @@ footer {
   border-top: 1px solid var(--footer-border-color);
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 12px; /* Bordas arredondadas no rodapé */
+}
+
+/* Media Queries para Responsividade */
+
+/* Ajuste para telas pequenas, como smartphones */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .header-hours {
+    width: 90%;
+    font-size: 0.9em;
+  }
+
+  .products h2 {
+    font-size: 1.8em;
+  }
+
+  .product {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .product h3 {
+    font-size: 1.4em;
+  }
+
+  .product p {
+    font-size: 1em;
+  }
+
+  .cart {
+    width: 90%;
+  }
+
+  .cart h2 {
+    font-size: 1.8em;
+  }
+}
+
+/* Ajuste para telas de tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+  .product {
+    width: 45%;
+  }
+
+  .header-hours {
+    width: 70%;
+  }
+
+  .cart {
+    width: 70%;
+  }
 }
