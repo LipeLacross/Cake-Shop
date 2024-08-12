@@ -18,7 +18,6 @@ A "Bolos da Dona Nilda" é um site dedicado à venda de bolos e sucos artesanais
 - **HTML**: Estrutura do conteúdo da página.
 - **CSS**: Estilização e layout do site, incluindo flexbox para o layout responsivo e ajustes de design.
 - **JavaScript**: Funcionalidades interativas, como a adição de produtos ao carrinho.
-- **Netlify**: Plataforma de deploy para hospedar o site online.
 
 ## 📁 Estrutura do Projeto
 
