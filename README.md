@@ -11,7 +11,7 @@ A "Bolos da Dona Nilda" é um site dedicado à venda de bolos e sucos artesanais
 
 ### Exemplo Visual do Projeto
 
-![image](https://github.com/user-attachments/assets/ad5a248f-22be-4164-a0f9-308850e9147d)
+![image](https://github.com/user-attachments/assets/f03dd31d-ff23-4a6d-aaed-3f1515165022)
 
 ## ✔️ Técnicas e Tecnologias Utilizadas
 
