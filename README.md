@@ -81,5 +81,5 @@ Para iniciar o projeto localmente, siga os passos abaixo:
 
 ## 🌐 Deploy
 
-O site está disponível online através do seguinte link: [Loja da Dona Nilda](https://bolosdanilda.netlify.app/)
+O site está disponível online através do seguinte link: https://bolosdanilda.vercel.app/
 
