@@ -1,0 +1,504 @@
+|-- assets
+  |-- cake_favicon.ico
+  |-- chocolate_cake_with_strawberry.png
+  |-- chocolate_pie.png
+  |-- lemon_cake.png
+  |-- orange_cake_chocolate_coating.png
+  |-- orange_juice.png
+  |-- pineapple_juice.png
+  |-- watermelon_juice.png
+|-- directory_listing.txt
+|-- index.html
+|-- LICENSE
+|-- main.js
+|-- package-lock.json
+|-- package.json
+|-- public
+  |-- vite.svg
+|-- README.md
+|-- style.css
+
+
+File contents:
+
+|-- assets
+  |-- cake_favicon.ico
+  |-- chocolate_cake_with_strawberry.png
+  |-- chocolate_pie.png
+  |-- lemon_cake.png
+  |-- orange_cake_chocolate_coating.png
+  |-- orange_juice.png
+  |-- pineapple_juice.png
+  |-- watermelon_juice.png
+|-- directory_listing.txt
+|-- index.html
+  Content:
+    <!doctype html>
+    <html lang="pt-BR">
+    
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Bolos da Dona Nilda</title>
+      <link rel="icon" href="assets/cake_favicon.ico">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+    <header>
+      <h1><img src="assets/cake_favicon.ico" alt="Ícone">Bolos da Dona Nilda</h1>
+      <p>Localizada em Salvador, Rua Cristopher 45, Oliveira</p>
+      <div class="header-hours">
+        <h2>Horário de Funcionamento</h2>
+        <p>Segunda a Sexta: 09:00 - 18:00</p>
+        <p>Sábado: 10:00 - 14:00</p>
+        <p>Domingo: Fechado</p>
+      </div>
+    </header>
+    
+    <main>
+      <section class="products">
+        <h2>Bolos</h2>
+        <div class="product-row">
+          <article class="product">
+            <img src="assets/orange_cake_chocolate_coating.png" alt="Bolo de Laranja com Cobertura de Chocolate">
+            <h3>Bolo de Laranja com Cobertura de Chocolate</h3>
+            <p>R$ 35,00 (Bolo Inteiro)</p>
+            <p>R$ 5,00 (Fatia)</p>
+            <p class="description">Um bolo macio com o sabor refrescante da laranja e uma cobertura rica de chocolate.</p>
+            <div class="button-group">
+              <button onclick="addToCart('Bolo de Laranja com Cobertura de Chocolate (Bolo Inteiro)', 35.00)">Adicionar Bolo Inteiro ao Carrinho</button>
+              <button onclick="addToCart('Fatia de Bolo de Laranja com Cobertura de Chocolate', 5.00)">Adicionar Fatia ao Carrinho</button>
+            </div>
+          </article>
+    
+          <article class="product">
+            <img src="assets/chocolate_cake_with_strawberry.png" alt="Bolo de Chocolate com Morango">
+            <h3>Bolo de Chocolate com Morango</h3>
+            <p>R$ 40,00 (Bolo Inteiro)</p>
+            <p>R$ 6,00 (Fatia)</p>
+            <p class="description">Delicioso bolo de chocolate, coberto com morangos frescos.</p>
+            <div class="button-group">
+              <button onclick="addToCart('Bolo de Chocolate com Morango (Bolo Inteiro)', 40.00)">Adicionar Bolo Inteiro ao Carrinho</button>
+              <button onclick="addToCart('Fatia de Bolo de Chocolate com Morango', 6.00)">Adicionar Fatia ao Carrinho</button>
+            </div>
+          </article>
+    
+          <article class="product">
+            <img src="assets/lemon_cake.png" alt="Bolo de Limão">
+            <h3>Bolo de Limão</h3>
+            <p>R$ 30,00 (Bolo Inteiro)</p>
+            <p>R$ 4,00 (Fatia)</p>
+            <p class="description">Bolo leve e refrescante, com um toque cítrico de limão.</p>
+            <div class="button-group">
+              <button onclick="addToCart('Bolo de Limão (Bolo Inteiro)', 30.00)">Adicionar Bolo Inteiro ao Carrinho</button>
+              <button onclick="addToCart('Fatia de Bolo de Limão', 4.00)">Adicionar Fatia ao Carrinho</button>
+            </div>
+          </article>
+    
+          <article class="product">
+            <img src="assets/chocolate_pie.png" alt="Torta de Chocolate">
+            <h3>Torta de Chocolate</h3>
+            <p>R$ 45,00 (Torta Inteira)</p>
+            <p>R$ 7,00 (Fatia)</p>
+            <p class="description">Torta cremosa de chocolate, perfeita para os amantes de doces.</p>
+            <div class="button-group">
+              <button onclick="addToCart('Torta de Chocolate (Torta Inteira)', 45.00)">Adicionar Torta Inteira ao Carrinho</button>
+              <button onclick="addToCart('Fatia de Torta de Chocolate', 7.00)">Adicionar Fatia ao Carrinho</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    
+      <section class="products">
+        <h2>Sucos</h2>
+        <div class="product-row">
+          <article class="product">
+            <img src="assets/orange_juice.png" alt="Suco de Laranja">
+            <h3>Suco de Laranja</h3>
+            <p>R$ 10,00 (400ml)</p>
+            <p class="description">Suco de laranja fresco, cheio de vitaminas e sabor.</p>
+            <button onclick="addToCart('Suco de Laranja (400ml)', 10.00)">Adicionar ao Carrinho</button>
+          </article>
+    
+          <article class="product">
+            <img src="assets/watermelon_juice.png" alt="Suco de Melancia">
+            <h3>Suco de Melancia</h3>
+            <p>R$ 12,00 (400ml)</p>
+            <p class="description">Suco refrescante de melancia, perfeito para dias quentes.</p>
+            <button onclick="addToCart('Suco de Melancia (400ml)', 12.00)">Adicionar ao Carrinho</button>
+          </article>
+    
+          <article class="product">
+            <img src="assets/pineapple_juice.png" alt="Suco de Abacaxi">
+            <h3>Suco de Abacaxi</h3>
+            <p>R$ 12,00 (400ml)</p>
+            <p class="description">Suco de abacaxi, doce e revigorante.</p>
+            <button onclick="addToCart('Suco de Abacaxi (400ml)', 12.00)">Adicionar ao Carrinho</button>
+          </article>
+        </div>
+      </section>
+    
+      <section class="cart">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: R$ 0,00</p>
+      </section>
+    </main>
+    
+    <footer>
+      <p>Direitos reservados Felipe Moreira</p>
+    </footer>
+    
+    <script src="main.js"></script>
+    </body>
+    
+    </html>
+|-- LICENSE
+|-- main.js
+  Content:
+    let cartItems = [];
+    let total = 0;
+    
+    function addToCart(product, price) {
+        cartItems.push({ product, price });
+        total += price;
+        updateCart();
+    }
+    
+    function removeFromCart(index) {
+        total -= cartItems[index].price;
+        cartItems.splice(index, 1);
+        updateCart();
+    }
+    
+    function updateCart() {
+        const cartItemsElement = document.getElementById('cart-items');
+        const totalElement = document.getElementById('total');
+    
+        cartItemsElement.innerHTML = '';
+        cartItems.forEach((item, index) => {
+            cartItemsElement.innerHTML += `
+          <li>
+            ${item.product} - R$ ${item.price.toFixed(2)}
+            <button onclick="removeFromCart(${index})">Remover</button>
+          </li>
+        `;
+        });
+    
+        totalElement.textContent = `Total: R$ ${total.toFixed(2)}`;
+    }
+|-- package-lock.json
+|-- package.json
+|-- public
+  |-- vite.svg
+|-- README.md
+|-- style.css
+  Content:
+    :root {
+      --primary-color: #FF6F61;
+      --secondary-color: #ea3827;
+      --accent-color: #000000;
+      --background-color: #F7CAC9;
+      --text-color: #333333;
+      --muted-text-color: #555555;
+      --button-hover-color: #D9534F;
+      --footer-bg-color: #ffffff;
+      --footer-border-color: #ddd;
+      --header-bg-color: #ffffff;
+      --header-shadow-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    header {
+      background-color: var(--header-bg-color);
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 5px var(--header-shadow-color);
+      border-radius: 10px;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+      color: var(--primary-color);
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    header h1 img {
+      width: 40px;
+      margin-right: 10px;
+    }
+    
+    header p {
+      font-size: 1.2em;
+      color: var(--muted-text-color);
+      margin: 10px 0 0;
+    }
+    
+    .header-hours {
+      margin-top: 10px;
+      font-size: 1em;
+      color: var(--muted-text-color);
+    }
+    
+    .header-hours h2 {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+    
+    .header-hours p {
+      margin: 0;
+    }
+    
+    main {
+      flex: 1;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    .products {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .products h2 {
+      font-size: 2.2em;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .product-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px; /* Reduzido o espaçamento entre os produtos */
+    }
+    
+    .product {
+      background-color: #fff;
+      border: 1px solid var(--accent-color);
+      border-radius: 12px; /* Bordas arredondadas */
+      padding: 10px; /* Ajustado o padding para melhor ajuste */
+      width: 220px;
+      margin-bottom: 20px; /* Reduzido o espaçamento entre as linhas */
+      text-align: center;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Alinha o conteúdo para ocupar o espaço disponível */
+    }
+    
+    .product img {
+      width: 100%;
+      height: 250px; /* Mantém a proporção da imagem */
+      object-fit: contain; /* Ajusta a imagem para se ajustar ao contêiner sem cortar */
+      border-radius: 8px; /* Bordas arredondadas na imagem */
+    }
+    
+    .product h3 {
+      font-size: 1.6em;
+      margin-bottom: 10px;
+      color: var(--text-color);
+    }
+    
+    .product p {
+      font-size: 1.2em;
+      color: var(--muted-text-color);
+      margin-bottom: 10px;
+    }
+    
+    .product .description {
+      font-size: 1em;
+      color: var(--muted-text-color);
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .product button {
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      padding: 12px 10px;
+      border-radius: 8px; /* Bordas arredondadas no botão */
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product button:hover {
+      background-color: var(--button-hover-color);
+    }
+    
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    
+    .cart {
+      text-align: center;
+      margin: 0 auto;
+      width: 45%;
+      max-width: 1200px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid var(--accent-color);
+      border-radius: 12px; /* Bordas arredondadas */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 60px; /* Espaço entre o carrinho e o rodapé */
+    }
+    
+    .cart h2 {
+      font-size: 2.2em;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+    }
+    
+    #cart-items {
+      list-style: none;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+    
+    #cart-items li {
+      padding: 12px;
+      background-color: #fff;
+      border: 1px solid var(--accent-color);
+      border-radius: 8px; /* Bordas arredondadas */
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      color: var(--text-color);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    #cart-items button {
+      background-color: var(--button-hover-color);
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: background-color 0.3s ease;
+    }
+    
+    #cart-items button:hover {
+      background-color: var(--primary-color);
+    }
+    
+    #total {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: var(--text-color);
+    }
+    
+    .product:hover {
+      transform: scale(1.05);
+    }
+    
+    .header-hours {
+      width: 40%;
+      background-color: var(--primary-color); /* Cor de fundo */
+      color: #fff; /* Cor do texto */
+      border-radius: 12px; /* Bordas arredondadas */
+      padding: 15px; /* Espaçamento interno */
+      margin: 20px auto; /* Espaçamento superior e inferior, e centraliza o elemento */
+      text-align: center; /* Alinhamento do texto */
+    }
+    
+    .header-hours h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+    
+    .header-hours p {
+      font-size: 1.2em;
+      margin: 5px 0;
+    }
+    
+    footer {
+      background-color: var(--footer-bg-color);
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid var(--footer-border-color);
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 12px; /* Bordas arredondadas no rodapé */
+    }
+    
+    /* Media Queries para Responsividade */
+    
+    /* Ajuste para telas pequenas, como smartphones */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    
+      header p {
+        font-size: 1em;
+      }
+    
+      .header-hours {
+        width: 90%;
+        font-size: 0.9em;
+      }
+    
+      .products h2 {
+        font-size: 1.8em;
+      }
+    
+      .product {
+        width: 100%;
+        padding: 5px;
+      }
+    
+      .product h3 {
+        font-size: 1.4em;
+      }
+    
+      .product p {
+        font-size: 1em;
+      }
+    
+      .cart {
+        width: 90%;
+      }
+    
+      .cart h2 {
+        font-size: 1.8em;
+      }
+    }
+    
+    /* Ajuste para telas de tablet */
+    @media (min-width: 601px) and (max-width: 900px) {
+      .product {
+        width: 45%;
+      }
+    
+      .header-hours {
+        width: 70%;
+      }
+    
+      .cart {
+        width: 70%;
+      }
+    }
