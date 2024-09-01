@@ -1,3 +1,5 @@
+## 🌐 [English Version of README](README_EN.md)
+
 # Cake-Shop
 
 A "Bolos da Dona Nilda" é um site dedicado à venda de bolos e sucos artesanais. O site apresenta uma interface amigável com uma estrutura simples para navegar pelos produtos, adicionar itens ao carrinho e visualizar o total. 
